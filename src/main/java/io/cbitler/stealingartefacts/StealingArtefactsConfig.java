@@ -13,6 +13,10 @@ public interface StealingArtefactsConfig extends Config {
 
     String HIGHLIGHT_PATROLS = "highlightPatrols";
 
+    String SHOW_PATROL_FACING_DIRECTION = "showPatrolFacingDirection";
+
+    String SHOW_PATROL_VISION_TILES = "showPatrolVisionTiles";
+
     String HIGHLIGHT_LADDERS = "highlightLadders";
 
     String HIGHLIGHT_GUARD_LURES = "highlightGuardLures";
@@ -38,6 +42,22 @@ public interface StealingArtefactsConfig extends Config {
     default boolean highlightPatrols() { return true; }
 
     @ConfigItem(
+            keyName = SHOW_PATROL_FACING_DIRECTION,
+            name = "Show patrol facing direction",
+            description = "Show an arrow indicating the direction each patrol is facing",
+            position = 4
+    )
+    default boolean showPatrolFacingDirection() { return true; }
+
+    @ConfigItem(
+            keyName = SHOW_PATROL_VISION_TILES,
+            name = "Show patrol vision tiles",
+            description = "Show the tiles in front of a patrol that are considered part of its vision area",
+            position = 5
+    )
+    default boolean showPatrolVisionTiles() { return false; }
+
+    @ConfigItem(
             keyName = HIGHLIGHT_LADDERS,
             name = "Highlight House Ladders",
             description = "Whether or not to highlight house ladders",
@@ -57,7 +77,7 @@ public interface StealingArtefactsConfig extends Config {
             keyName = "highlightKhaledTaskless",
             name = "Highlight Khaled without task",
             description = "This option will highlight Khaled when you don't have a current target",
-            position = 4
+            position = 6
     )
     default boolean highlightKhaledTaskless() {
         return true;

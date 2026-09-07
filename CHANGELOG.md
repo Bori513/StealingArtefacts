@@ -1,5 +1,7 @@
 ## Unreleased
 
+- Minor: Add a compact facing-direction indicator and optional vision tiles for patrol NPCs.
+
 ## 1.6
 
 - Fix: Issue with plugin not starting at startup. (#37)
