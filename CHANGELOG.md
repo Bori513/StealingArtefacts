@@ -1,6 +1,7 @@
 ## Unreleased
 
 - Minor: Add a compact facing-direction indicator for patrol NPCs.
+- Dev: Switch to Nerixyz/actionsx-prettier. (#49)
 
 ## 1.6
 
