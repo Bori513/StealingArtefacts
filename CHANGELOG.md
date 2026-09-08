@@ -1,6 +1,6 @@
 ## Unreleased
 
-- Minor: Add a compact facing-direction indicator and optional vision tiles for patrol NPCs.
+- Minor: Add a compact facing-direction indicator for patrol NPCs.
 
 ## 1.6
 
